@@ -22,6 +22,8 @@ This project serves as the user-facing layer for CareerKit, a modular platform d
 - Static label injection (multi-language ready)
 - Button for generating tailored content (API integration coming soon)
 
+---
+
 ### 📝 Git Commit Message Format
 
 **Using Conventional Commits**:
