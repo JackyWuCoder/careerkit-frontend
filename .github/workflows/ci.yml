@@ -1,0 +1,32 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: ✅ Check for required top-level files
+        run: |
+          test -f index.html || (echo "❌ Missing index.html" && exit 1)
+          test -f css/style.css || (echo "❌ Missing css/style.css" && exit 1)
+          test -f js/index.js || (echo "❌ Missing js/index.js" && exit 1)
+
+      - name: 📁 Check top-level folder structure
+        run: |
+          test -d css || (echo "❌ Missing css/ folder" && exit 1)
+          test -d js || (echo "❌ Missing js/ folder" && exit 1)
+          test -d lang || (echo "❌ Missing lang/ folder" && exit 1)
+          test -d resources || (echo "❌ Missing resources/ folder" && exit 1)
+
+      - name: ✅ Validate HTML structure
+        run: |
+          grep -q "<!DOCTYPE html>" index.html || (echo "❌ index.html may not be valid HTML" && exit 1)
