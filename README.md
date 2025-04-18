@@ -24,7 +24,7 @@ This project serves as the user-facing layer for CareerKit, a modular platform d
 
 ---
 
-### 📝 Git Commit Message Format
+## 📝 Git Commit Message Format
 
 **Using Conventional Commits**:
 
