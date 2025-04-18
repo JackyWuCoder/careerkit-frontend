@@ -30,17 +30,18 @@ This project serves as the user-facing layer for CareerKit, a modular platform d
 
 `<type>: <short message>`
 
-| Type        | Purpose                                      |
-|-------------|----------------------------------------------|
-| `feat`      | New feature                                  |
-| `fix`       | Bug fix                                      |
-| `hotfix`    | Urgent fix on production                     |
-| `docs`      | Documentation changes                        |
-| `style`     | Code style or UI changes (non-functional)    |
-| `chore`     | Maintenance/setup work                       |
-| `refactor`  | Code restructuring (no feature change)       |
-| `test`      | Add or modify tests                          |
-| `exp`       | Experimental code/features (may be removed)  |
+| Type        | Purpose                                        |
+|-------------|------------------------------------------------|
+| `feat`      | New feature                                    |
+| `fix`       | Bug fix                                        |
+| `hotfix`    | Urgent fix on production                       |
+| `docs`      | Documentation changes                          |
+| `style`     | Code style or UI changes (non-functional)      |
+| `chore`     | Maintenance/setup work                         |
+| `refactor`  | Code restructuring (no feature change)         |
+| `test`      | Add or modify tests                            |
+| `ci`        | CI configuration changes (GitHub Actions, etc.)|
+| `exp`       | Experimental code/features (may be removed)    |
 
 ---
 
