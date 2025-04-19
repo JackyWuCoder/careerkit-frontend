@@ -62,3 +62,49 @@ These changes will be considered after MVP is complete to avoid breaking structu
 ## 🗂 Status
 
 > MVP in progress – currently focused on UI structure and component logic. Backend and deployment integration next.
+
+---
+
+### 🔁 Git Workflow & Branch Strategy
+
+This project follows a **real-world team simulation workflow** with the following conventions:
+
+#### 📌 Branching Strategy
+
+| Branch      | Purpose                                                                        |
+|-------------|--------------------------------------------------------------------------------|
+| `main`      | 🟢 Production-ready code only. Protected branch with enforced reviews.        |
+| `dev`       | 🛠️ Active development/integration branch. All features are merged here first. |
+| `feat/*`    | ✨ Feature branches for new additions.                                        |
+| `fix/*`     | 🐛 Bug fixes.                                                                 |
+| `hotfix/*`  | 🚨 Emergency patches (applied directly to `main`, if needed).                 |
+
+---
+
+#### ✅ Pull Request Rules
+
+- All changes are introduced via **pull requests (PRs)**.
+- **`main` branch:**
+  - Requires PRs with at least **1 approving review**.
+  - PR authors **cannot approve their own PRs**.
+  - CI (build + lint) must pass.
+  - Force pushes are **blocked**.
+- **`dev` branch:**
+  - PRs are encouraged, but direct pushes are allowed for speed.
+  - CI is run on all pushes and PRs.
+  - No required approvals.
+
+---
+
+#### 🚦 Merge Method
+
+Only **squash and merge** is enabled to maintain a clean, linear commit history.
+
+---
+
+#### 🛡️ Protected Branches
+
+| Branch | Protection Rules |
+|--------|------------------|
+| `main` | ✅ PRs only, ✅ CI required, ✅ 1 approval, ✅ No force push |
+| `dev`  | ✅ CI optional, 🚫 Review required, ✅ PR preferred |
