@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="lang/en/indexStatics.js"></script>
     <script type="module" src="js/index.js" defer></script>
-    <title>Cover Letter Helper</title>
+    <title>CareerKit Cover Letter</title>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <div id="prompt-container">
+    <nav id="site-name" class="navbar"></nav>
+    <h1 id="title" class="title"></h1>
+    <p id="title-description" class="title description"></p>
+    <div id="prompt-container" class="flex-container">
         <div class="container">
-            <h2 id="letter-template"></h2>
-            <textarea id="template" placeholder="Enter Cover Letter..."></textarea>
+            <h2 id="letter-template" class="input-label"></h2>
+            <textarea id="template" placeholder="Enter Cover Letter..." class="input-textarea"></textarea>
         </div>
         <div class="container">
-            <h2 id="job-description"></h2>
-            <textarea id="description" placeholder="Enter Job Description..."></textarea>
+            <h2 id="job-description" class="input-label"></h2>
+            <textarea id="description" placeholder="Enter Job Description..." class="input-textarea"></textarea>
         </div>
-        <button id="submit"></button>
     </div>
-    <h2 id="generated-letter"></h2>
-    <p id="generated"></p>
+    <button id="submit" class="block center"></button>
+    <h2 id="generated-letter" class="center output-label"></h2>
+    <img id="loading-icon" src="./resources/loading.gif" class="loading">
+    <div class="flex-container container">
+        <textarea id="generated" class="output-textarea"></textarea>
+    </div>
 </body>
 </html>

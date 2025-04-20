@@ -1,0 +1,115 @@
+/* Shared elements */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito", sans-serif;
+    background-color: #E1E5F2;
+}
+
+#site-name {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    background-color: #1F7A8C;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 16px;
+    margin: 0px;
+}
+
+#submit {
+    font-family: "Nunito", sans-serif;
+    border-style: none;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 25px;
+    background-color: #1F7A8C;
+    color: #E1E5F2;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #022B3A;
+    color: #FFFFFF;
+}
+
+.title {
+    font-weight:  bolder;
+    text-align: center;
+    color: #022B3A;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.description {
+    color: #1F7A8C;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+/* CSS classes */
+.input-label {
+    color: #022B3A;
+    margin: 0px;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+.output-label {
+    color: #022B3A;
+}
+
+.input-textarea {
+    width: 95%;
+    height: 300px;
+    resize: none;
+    box-sizing: border-box;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #1F7A8C;
+    font-family: "Nunito", sans-serif;
+}
+
+.output-textarea {
+    width: 90%;
+    height: 300px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #1F7A8C;
+    font-family: "Nunito", sans-serif;
+}
+
+.loading {
+    width: 120px;
+    height: 120px;
+    display: none;
+    margin: auto;
+}
+
+.block {
+    display: block;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}

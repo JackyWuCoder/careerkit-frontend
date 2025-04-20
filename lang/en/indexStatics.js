@@ -1,5 +1,7 @@
 // Labels
-const titleLabel = "Cover Letter Helper";
+const siteName = "CareerKit";
+const titleLabel = "Autofill";
+const titleDescriptionLabel = "Create tailored cover letters from your template";
 const letterLabel = "Cover Letter Here";
 const jobDescriptionLabel = "Job Description Here";
 const submitLabel = "Autofill Now!";
