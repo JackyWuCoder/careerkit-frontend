@@ -26,10 +26,10 @@ document.getElementById("submit").addEventListener("click", async (event) => {
     const template = document.getElementById("template").value;
     const description = document.getElementById("description").value;
 
-    const generatedLetter = await APIHub.generateCoverLetter(JSON.stringify({
+    const generatedLetter = await APIHub.generateCoverLetter({
         template: template,
         description: description
-    }));
+    });
     document.getElementById("generated").value = generatedLetter ? generatedLetter : serverError;
     loader.hide();
 })
