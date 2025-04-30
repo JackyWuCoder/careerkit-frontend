@@ -28,7 +28,7 @@ document.getElementById("submit").addEventListener("click", async (event) => {
 
     const generatedLetter = await APIHub.generateCoverLetter({
         template: template,
-        description: description
+        jobDescription: description
     });
     document.getElementById("generated").value = generatedLetter ? generatedLetter : serverError;
     loader.hide();
