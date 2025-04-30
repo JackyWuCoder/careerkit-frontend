@@ -11,7 +11,7 @@ class APIHub {
             const response = await fetch(endpoint, this.#buildPayload("POST", body));
             if (response.status === 200) {
                 const data = await response.json();
-                return data.letter;
+                return data.result;
 
             } else return null;
 
