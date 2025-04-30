@@ -21,13 +21,17 @@ class APIHub {
     }
 
     static #buildPayload(method, body) {
-        const payload = new Object();
-        payload.method = method;
-        if (body) payload.body = JSON.stringify(body);
-
-        payload.headers = {
-            "Content-Type": "application/json"
+        const payload = {
+            method: method,
+            headers: {
+                "Content-Type": "application/json"
+            }
         };
+
+        if (body) {
+            payload.body = JSON.stringify(body);
+        }
+
         return payload;
     }
 }
