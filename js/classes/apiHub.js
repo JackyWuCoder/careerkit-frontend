@@ -2,8 +2,8 @@ export { APIHub }
 
 class APIHub {
 
-    static #backendDomain = "Domain here"
-    static #autofillEndpoint = "/EP Here";
+    static #backendDomain = "http://localhost:5240"
+    static #autofillEndpoint = "/api/v1/coverLetter/generate/template";
 
     static async generateCoverLetter(body) {
         const endpoint = this.#backendDomain + this.#autofillEndpoint;
