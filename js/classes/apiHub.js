@@ -2,8 +2,8 @@ export { APIHub }
 
 class APIHub {
 
-    static #backendDomain = "Domain here"
-    static #autofillEndpoint = "/EP Here";
+    static #backendDomain = "http://localhost:5240"
+    static #autofillEndpoint = "/api/v1/coverLetter/generate/template";
 
     static async generateCoverLetter(body) {
         const endpoint = this.#backendDomain + this.#autofillEndpoint;
@@ -11,7 +11,7 @@ class APIHub {
             const response = await fetch(endpoint, this.#buildPayload("POST", body));
             if (response.status === 200) {
                 const data = await response.json();
-                return data.letter;
+                return data.result;
 
             } else return null;
 
@@ -21,13 +21,17 @@ class APIHub {
     }
 
     static #buildPayload(method, body) {
-        const payload = new Object();
-        payload.method = method;
-        if (body) payload.body = body;
-
-        payload.headers = {
-            "Content-Type": "application/json"
+        const payload = {
+            method: method,
+            headers: {
+                "Content-Type": "application/json"
+            }
         };
+
+        if (body) {
+            payload.body = JSON.stringify(body);
+        }
+
         return payload;
     }
 }
