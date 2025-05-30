@@ -10,13 +10,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './cover-letter.component.css'
 })
 export class CoverLetterComponent {
-  userLetter = '';
+  coverLetter = '';
   jobDescription = '';
   generatedLetter = '';
 
   generate() {
     this.generatedLetter = `AI response based on:
-    - Your letter: ${this.userLetter}
+    - Your letter: ${this.coverLetter}
     - Job: ${this.jobDescription}`;
   }
 }
