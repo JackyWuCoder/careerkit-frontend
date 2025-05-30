@@ -1,1 +1,20 @@
 <p>cover-letter works!</p>
+<nav id="site-name" class="navbar"></nav>
+    <h1 id="title" class="title"></h1>
+    <p id="title-description" class="title description"></p>
+    <div id="prompt-container" class="flex-container">
+        <div class="container">
+            <h2 id="letter-template" class="input-label"></h2>
+            <textarea id="template" placeholder="Enter Cover Letter..." class="input-textarea"></textarea>
+        </div>
+        <div class="container">
+            <h2 id="job-description" class="input-label"></h2>
+            <textarea id="description" placeholder="Enter Job Description..." class="input-textarea"></textarea>
+        </div>
+    </div>
+    <button id="submit" class="block center"></button>
+    <h2 id="generated-letter" class="center output-label"></h2>
+    <img id="loading-icon" src="./resources/loading.gif" class="loading">
+    <div class="flex-container container">
+        <textarea id="generated" class="output-textarea"></textarea>
+    </div>
