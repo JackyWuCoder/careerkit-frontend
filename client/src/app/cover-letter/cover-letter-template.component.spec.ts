@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoverLetterComponent } from './cover-letter.component';
+import { CoverLetterTemplateComponent } from './cover-letter-template.component';
 
 describe('CoverLetterComponent', () => {
-  let component: CoverLetterComponent;
-  let fixture: ComponentFixture<CoverLetterComponent>;
+  let component: CoverLetterTemplateComponent;
+  let fixture: ComponentFixture<CoverLetterTemplateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CoverLetterComponent]
+      imports: [CoverLetterTemplateComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CoverLetterComponent);
+    fixture = TestBed.createComponent(CoverLetterTemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

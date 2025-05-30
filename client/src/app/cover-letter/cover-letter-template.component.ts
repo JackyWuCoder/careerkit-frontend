@@ -7,10 +7,10 @@ import { CoverLetterService } from '../services/cover-letter.service'
   selector: 'app-cover-letter',
   standalone: true,
   imports: [FormsModule, CommonModule],
-  templateUrl: './cover-letter.component.html',
-  styleUrl: './cover-letter.component.css'
+  templateUrl: './cover-letter-template.component.html',
+  styleUrl: './cover-letter-template.component.css'
 })
-export class CoverLetterComponent {
+export class CoverLetterTemplateComponent {
   coverLetter = '';
   jobDescription = '';
   generatedLetter = '';

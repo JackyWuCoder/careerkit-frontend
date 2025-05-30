@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component'
-import { CoverLetterComponent } from './cover-letter/cover-letter.component'
+import { CoverLetterTemplateComponent } from './cover-letter/cover-letter-template.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavComponent, CoverLetterComponent],
+  imports: [RouterOutlet, NavComponent, CoverLetterTemplateComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
