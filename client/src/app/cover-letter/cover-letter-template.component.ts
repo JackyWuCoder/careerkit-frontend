@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CoverLetterService } from '../services/cover-letter.service'
 
 @Component({
-  selector: 'app-cover-letter',
+  selector: 'app-cover-letter-template',
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './cover-letter-template.component.html',
